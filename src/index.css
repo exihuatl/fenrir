@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    box-sizing: border-box;
+  }
+
+html {
+    font-family: Geomanist, Arial, sans-serif;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src:
+    local('Geomanist'),
+    url('/fonts/geomanist-regular.woff2') format('woff2');
+  ascent-override: 100%; /* Fixes font baseline for this specific asset (except on Safari) */
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src:
+    local('Geomanist'),
+    url('/fonts/geomanist-medium.woff2') format('woff2');
+  ascent-override: 100%; /* Fixes font baseline for this specific asset (except on Safari) */
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    local('Geomanist'),
+    url('/fonts/geomanist-book.woff2') format('woff2');
+  ascent-override: 100%; /* Fixes font baseline for this specific asset (except on Safari) */
+}
+
+:root {
+  --font-primary: 'Geomanist', Arial, sans-serif;
+}
