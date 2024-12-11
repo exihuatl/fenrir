@@ -6,7 +6,7 @@ import { cn } from "../utils";
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
-    { className, variant = "primary", size = "md", asChild = false, ...props },
+    { className, variant = "primary", size = "lg", asChild = false, ...props },
     ref,
   ) => {
     const Comp = asChild ? Slot : "button";
